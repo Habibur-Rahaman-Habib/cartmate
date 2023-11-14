@@ -1,0 +1,228 @@
+//product style 2 silder
+.product_style {
+  .left_slider {
+    @include portrait-phone {
+      order: 2;
+    }
+  }
+  .right_slider {
+    @include portrait-phone {
+      order: 1;
+    }
+  }
+}
+.single_product_slider {
+  position: relative;
+  margin-top: 11px;
+
+  .prev-arrow {
+    left: 15px;
+  }
+  .next-arrow {
+    right: 25px;
+  }
+
+  .slick-arrow {
+    color: white;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    font-size: 15px;
+    transform: translateY(-50%);
+    transition: var(--transition-base);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background: var(--secondary-color);
+    }
+  }
+}
+
+.product_small_slider {
+  .feature-image {
+    padding: 15px;
+    @include portrait-phone {
+      padding: 5px;
+    }
+    img {
+      width: 100% !important;
+    }
+  }
+}
+
+// Product style 2, 3 pages >>>>>>>>>>>>>>>>>>>>>>>
+
+.product_sample_img {
+  margin-bottom: 20px;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  span {
+    left: 20px;
+    top: 20px;
+    padding: 4px 18px;
+    border-radius: 4px;
+  }
+}
+
+.product_right_title2 {
+  ul {
+    gap: 3px !important;
+    li {
+      img {
+        margin-right: 1px !important;
+      }
+    }
+  }
+}
+
+.item-calculator2 {
+  max-width: 117px !important;
+}
+
+.about_product2 {
+  ul li {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+}
+
+.buy_together_img {
+  .product_img {
+    border: 1px solid transparent;
+    transition: var(--transition-base);
+    &:hover {
+      border: 1px solid var(--primary-color);
+    }
+    .plus {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: white;
+      left: 7px;
+      top: 7px;
+      font-size: 15px;
+    }
+  }
+}
+
+.product_details_three {
+  li {
+    font-size: 14px !important;
+  }
+}
+
+.multi_card2 {
+  p {
+    font-size: 14px !important;
+  }
+  ul {
+    gap: 5px !important;
+  }
+}
+
+.feature_img {
+  li {
+    .feature-image {
+      width: auto !important;
+    }
+    .bl-product-content {
+      h5 {
+        font-size: 16px !important;
+        margin-bottom: 5px !important;
+        line-height: 1;
+      }
+      ul {
+        li {
+        }
+      }
+    }
+  }
+}
+
+.product_style_map2 {
+  ul li {
+    font-size: 13px !important;
+    & + li {
+      margin-left: 5px !important;
+      &::before {
+        font-size: 5px !important;
+        left: -6px !important;
+        top: 7px !important;
+      }
+    }
+  }
+}
+
+// Product style 4 pages >>>>>>>>>>>>>>>>>>>>>>>
+.product_img {
+  .video-iconbox {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    span {
+      a {
+        color: var(--white-color);
+        width: 50px;
+        height: 50px;
+        background: var(--primary-color);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 6px solid #f7f3f3;
+      }
+    }
+  }
+}
+
+.product_small_slider {
+  .feature-image {
+    position: relative;
+    .video-iconbox {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      span {
+        a {
+          color: var(--white-color);
+          width: 50px;
+          height: 50px;
+          background: var(--primary-color);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          border: 6px solid #f7f3f3;
+          @include portrait-phone {
+            width: 30px;
+            height: 30px;
+            border-width: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product_small_slider {
+  height: 1085px;
+  overflow: hidden;
+  .slick-slide {
+    opacity: 0;
+    &.slick-active {
+      opacity: 1;
+    }
+  }
+}
+
+.product_small_slider .feature-image {
+  margin-top: -1px;
+  overflow: hidden;
+}

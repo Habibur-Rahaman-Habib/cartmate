@@ -1,0 +1,233 @@
+.team_details_wrap {
+  .team_details_left {
+    padding: 30px;
+    background: var(--primary-light);
+    box-shadow: var(--box-shadow1);
+  }
+}
+.author_pic {
+  margin-bottom: 30px;
+  img {
+    transition: var(--transition-base);
+    &:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+}
+
+.author_details {
+  h4 {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.author_progess {
+  margin-top: 40px;
+  padding-bottom: 25px;
+  .progress {
+    overflow: inherit;
+    height: 10px;
+    border-radius: 0;
+    margin-bottom: 40px;
+    p {
+      font-weight: 700;
+      top: -25px;
+    }
+    .progress_bar {
+      span {
+        right: -15px;
+        top: -25px;
+        color: #333 !important;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.team_details_right {
+  border: 1px solid #f2eeee;
+  background: white;
+  padding: 30px;
+  padding-right: 0px;
+  margin-bottom: 30px;
+}
+
+.author_title {
+  margin-bottom: 30px;
+  h5 {
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .author_social {
+    a {
+      width: 35px;
+      height: 35px;
+      background: var(--light-btn-color);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+      border-radius: 3px;
+      font-size: 17px;
+      transition: var(--transition-base);
+      &:hover {
+        background: var(--primary-color);
+      }
+      &:hover i {
+        color: white;
+      }
+      i {
+        color: var(--secondary-color);
+        transition: var(--transition-base);
+      }
+    }
+  }
+}
+
+.about_me {
+  margin-bottom: 30px;
+  h4 {
+    margin-bottom: 15px;
+  }
+}
+
+.get_in {
+  margin-bottom: 30px;
+  h4 {
+    margin-bottom: 20px;
+  }
+  .get_in_details {
+    .get_in_top {
+      gap: 85px;
+      @include screen-992 {
+        gap: 10px;
+        flex-direction: column;
+      }
+      @include screen-768 {
+        gap: 25px;
+        flex-direction: row;
+      }
+      @include portrait-phone {
+        gap: 10px;
+        flex-direction: column;
+      }
+    }
+    .get_in_bottom {
+      gap: 60px;
+      @include screen-992 {
+        gap: 10px;
+        flex-direction: column;
+      }
+      @include screen-768 {
+        gap: 25px;
+        flex-direction: row;
+      }
+      @include portrait-phone {
+        gap: 10px;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .get_item {
+    gap: 15px;
+    .get_icon {
+      width: 35px;
+      height: 35px;
+      background: var(--light-btn-color);
+      border-radius: 5px;
+      i {
+        color: var(--primary-color);
+      }
+    }
+    .get_detail {
+      span {
+        display: block;
+      }
+    }
+    @include screen-768{
+      width: calc(50% - 7px);
+    }
+  }
+}
+
+.quali {
+  padding-right: 30px;
+  h4 {
+    margin-bottom: 16px;
+  }
+  .quali_part {
+    margin: 30px 0;
+    .quali_item {
+      background: var(--primary-light);
+      padding: 19px 15px;
+      h4 {
+        margin: 10px 0;
+      }
+      h6 {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        font-family: var(--body-font);
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.contact_me {
+  .contact_title {
+    padding: 21px 30px;
+    border: 1px solid var(--white-white-2, #f2eeee);
+    background: white;
+  }
+}
+.contact_form {
+  border: 1px solid var(--white-white-2, #f2eeee);
+  border-top: 0px;
+  padding: 30px;
+  form {
+    .input_field {
+      gap: 30px;
+      margin-bottom: 25px;
+      @include screen-992 {
+        flex-direction: column;
+      }
+
+      input {
+        background: var(--primary-light);
+        border: none;
+        outline: none;
+        height: 60px;
+        width: 49%;
+        padding: 21px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        @include screen-992 {
+          width: 100%;
+        }
+        &::placeholder {
+          color: #5a5a5a;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+    textarea {
+      background: var(--primary-light);
+      color: #5a5a5a;
+      border: none;
+      width: 100%;
+      padding: 20px 30px;
+      margin-bottom: 25px;
+    }
+  }
+}

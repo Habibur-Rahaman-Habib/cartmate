@@ -1,0 +1,114 @@
+.query_tab {
+  .nav {
+    gap: 17px;
+    justify-content: center !important;
+    button {
+      padding: 10px 20px !important;
+      background: var(--light-btn-color);
+      border: none !important;
+      @include screen-460 {
+        padding: 5px 10px !important;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+/* styles.css */
+/* styles.css */
+
+.faq_accordion {
+  .accordion {
+    width: 100%;
+    .accordion-item {
+      border: none;
+      margin-bottom: 30px;
+      border-radius: 6px;
+      @include screen-768 {
+        margin-bottom: 20px;
+      }
+      .accordion-title {
+        cursor: pointer;
+        background-color: var(--primary-light);
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 34px 30px;
+        font-size: 24px;
+        border-radius: 5px;
+        z-index: 1;
+        @include screen-768 {
+          padding: 30px 25px;
+          font-size: 20px;
+        }
+        @include screen-460 {
+          padding: 25px 15px;
+          font-size: 17px;
+        }
+
+        .plus-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          cursor: pointer;
+          width: 100%;
+          text-align: right;
+          height: 100%;
+          i {
+            width: 54px;
+            height: 54px;
+            color: white;
+            background: var(--text-color);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 54px;
+            margin-top: 25px;
+            margin-right: 25px;
+            @include portrait-phone {
+              margin-top: 20px;
+              margin-right: 10px;
+            }
+            @include screen-460 {
+              margin-top: 7px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .accordion-content {
+        display: none;
+        padding: 29px;
+        position: relative;
+        background: var(--text-color);
+        color: white;
+        margin-top: 30px;
+        border-radius: 6px;
+        h4 {
+          margin-bottom: 35px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid white;
+          color: white;
+          font-weight: 400;
+        }
+        p {
+          color: white;
+          font-weight: 400;
+        }
+        .minus-icon {
+          position: absolute;
+          top: 25px;
+          right: 25px;
+          cursor: pointer;
+          width: 54px;
+          height: 54px;
+          color: var(--primary-color);
+          background: white;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 54px;
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}

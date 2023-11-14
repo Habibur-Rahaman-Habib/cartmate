@@ -1,0 +1,49 @@
+/*
+Theme Name: Cartmate - eCommerce HTML Template
+Author: Mate_Themes
+Author URI: https://themeforest.net/user/mate_themes
+Tags: cartmate, ecommerce, blog, fashion products, online shop, ecommerce store
+Description: Cartmate - An eCommerce HTML5 Template
+Version: 1.0.0
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+:root {
+  --heading-font: "Jost", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+  --primary-color: #fe7c01;
+  --primary-light: #f9f3ef;
+  --secondary-color: #333333;
+  --white-color: #ffffff;
+  --text-color: #5a5a5a;
+  --color-gray: rgba(90, 90, 90, 0.3);
+  --danger-color: #ea1b25;
+  --light-btn-color: #ffe4ca;
+  --transition-base: all 0.5s;
+  --border-color: #ededf0;
+  --box-shadow: 20px 20px 45px 5px rgba(55, 143, 255, 0.1);
+
+  //For home page 3
+  --off-white-color: #f2eeee;
+  --pink-color: #f9f3ef;
+  --purpel-color: #d2d7ff;
+  --off-orange-color: #ffe4ca;
+  --off-green-color: #ceffe2;
+  --off-sky-color: #c4f1ff;
+  --sky-color: #eaf8fb;
+  --red-color: #ea1b25;
+  --green-color: #003d29;
+  --lemon-color: #daeaea;
+  --badami-color: #e7e9fe;
+  --blue-color: #00438b;
+  --vanish-black: rgba(90, 90, 90, 0.3);
+  --black-color: #000000;
+  --hm4-secondary-color: #003d29;
+  --hm4-headings-color: #000000;
+  --hm4-light-white: #f2eeee;
+  --hm3-primary-color: #00438b;
+}

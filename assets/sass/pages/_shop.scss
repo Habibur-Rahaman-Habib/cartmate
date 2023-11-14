@@ -1,0 +1,307 @@
+.shop_list_heading {
+  ul {
+    li {
+      flex-shrink: 0;
+      button {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: var(--light-btn-color);
+        transition: var(--transition-base);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background: var(--primary-color);
+        }
+        &.filter {
+          width: 92px;
+          border-radius: 4px;
+          font-size: 16px;
+          font-weight: 500;
+          img {
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+      span {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      select {
+        border: none;
+        background-color: var(--light-btn-color);
+        border-radius: 0 !important;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.shop_single_item {
+  background: var(--primary-light);
+  padding: 30px;
+  margin-bottom: 30px;
+  @include screen-768 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product-card {
+    @include screen-400 {
+      padding: 10px;
+    }
+  }
+  .product-reviews {
+    li {
+      a {
+        color: var(--danger-color);
+      }
+    }
+  }
+  .product-social-icons {
+    .template-btn {
+      @include screen-460 {
+        padding: 8px;
+      }
+    }
+    ul {
+      li {
+        a {
+          @include screen-400 {
+            width: 35px;
+            height: 35px;
+            border-width: 2px;
+          }
+        }
+        & + li {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+
+// sidebar widget
+.type {
+  input[type="checkbox"] {
+    border: 0;
+    border-radius: 0px;
+    padding: 0;
+    background-color: var(--light-btn-color);
+    margin-right: 5px;
+    &:checked {
+      background: var(--primary-color);
+    }
+    &.red {
+      background: #ea1b25;
+      border: 1px solid var(--text-color);
+    }
+    &.yellow {
+      background: #fbd835;
+      border: 1px solid var(--text-color);
+    }
+    &.black {
+      background: #323339;
+      border: 1px solid var(--text-color);
+    }
+    &.green {
+      background: #0d9562;
+      border: 1px solid var(--text-color);
+    }
+    &.b_orange {
+      background: #997e60;
+      border: 1px solid var(--text-color);
+    }
+    &.blue {
+      background: #2196f3;
+      border: 1px solid var(--text-color);
+    }
+    &.orange {
+      background: #fe7c01;
+      border: 1px solid var(--text-color);
+    }
+    &.d_blue {
+      background: #0e3fa9;
+      border: 1px solid var(--text-color);
+    }
+    &.white {
+      background: #d7d8e1;
+      border: 1px solid var(--text-color);
+    }
+    &.purple {
+      background: #6817ab;
+      border: 1px solid var(--text-color);
+    }
+    &.b_red {
+      background: #703f49;
+      border: 1px solid var(--text-color);
+    }
+    &.drak {
+      background: #2f4f4f;
+      border: 1px solid var(--text-color);
+    }
+  }
+}
+
+.ui-widget-content {
+  height: 6px;
+  border: 0 !important;
+}
+.ui-slider-range {
+  background: #ff7c08;
+}
+.ui-slider-handle {
+  width: 12px !important;
+  height: 12px !important;
+  background: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 50%;
+  outline: 0;
+  top: -3px !important;
+}
+
+.price_input {
+  span {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  input {
+    background: var(--light-btn-color);
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    text-align: center;
+    width: 109px;
+    height: 30px;
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: textfield;
+      margin: 0;
+    }
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: textfield;
+      margin: 0;
+    }
+  }
+}
+
+.bl-sidebar-widget {
+  .sidebar-products-list {
+    li {
+      @include screen-400 {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      & + li {
+        @include screen-400 {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+// shop with left sidebar
+/*********************shop__card****************/
+.shop__card {
+  padding: 20px;
+  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.15);
+  transition: var(--transition-base);
+  .feature-img img {
+    border-radius: 5px;
+  }
+  .shop__body {
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      color: var(--secondary-color);
+    }
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+        a,
+        p {
+          color: var(--secondary-color);
+          font-family: var(--body-font);
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 400;
+        }
+        span {
+          width: 20px;
+          height: 20px;
+          background: var(--secondary-color);
+          color: var(--white-color);
+          border-radius: 50%;
+          font-size: 9px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: var(--transition-base);
+        }
+      }
+    }
+    .shop__btn {
+      margin-top: 20px;
+      padding: 12px;
+      background: var(--secondary-color);
+      color: var(--white-color);
+      display: inline-block;
+      font-weight: 400;
+      text-transform: capitalize;
+      border-radius: 2px;
+    }
+  }
+  &:hover {
+    .shop__body {
+      ul {
+        li {
+          span {
+            background: var(--primary-color);
+            color: var(--white-color);
+          }
+        }
+      }
+    }
+    .shop__btn {
+      background: var(--primary-color);
+      color: var(--white-color);
+    }
+  }
+}
+
+/**************km__shop__grid*************/
+.km__shop__grid {
+  .product-card {
+    transition: var(--transition-base);
+    .ex-tr-product-info {
+      .product-reviews {
+        li {
+          a {
+            color: var(--danger-color);
+          }
+        }
+      }
+    }
+    &:hover {
+      .ex-tr-product-info {
+        .product-reviews {
+          li {
+            a {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+      .product-bg-clip {
+        transition: var(--transition-base);
+        span {
+          background: var(--light-btn-color);
+        }
+      }
+    }
+  }
+}

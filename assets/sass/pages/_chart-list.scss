@@ -1,0 +1,61 @@
+/*************chart__list**************/
+.chart__left{
+    table{
+        text-align: center;
+        width: 100%;
+        border: 1px solid var(--border-color);
+        th{
+            background: var(--white-color);
+            padding: 15px 0;
+            font-family: var(--body-font);
+            font-size: 20px;
+            font-weight: 400;
+            color: #000;
+        }
+        tr{
+            &:nth-child(even){
+                background: #F2EEEE;
+            }
+            &:nth-child(odd){
+                background: var(--primary-light);
+            }
+            td{
+                width: calc(100% / 11);
+                padding: 15px 0;
+                color: var(--text-color);
+                font-family: var(--body-font);
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        
+    }
+}
+
+/*************size__chart***************/
+.size__chart__1,
+.size__chart__2,
+.size__chart__3,
+.size__chart__4,
+.size__chart__5{
+    table{
+        tr{
+            &:nth-child(even){
+                background: var(--light-btn-color);
+            }
+            &:nth-child(odd){
+                background: #F2EEEE;
+            }
+            th,td{
+                padding: 15px 0;
+                font-family: var(--body-font);
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+
+

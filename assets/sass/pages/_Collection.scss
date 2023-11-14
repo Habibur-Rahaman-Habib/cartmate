@@ -1,0 +1,126 @@
+/**************cn__collection__slider*************/
+.cn__collection__slider {
+  .single-item {
+    .product-card {
+      transition: var(--transition-base);
+      .cn__style {
+        -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.2));
+      }
+      .product-bg-clip {
+        span {
+          transition: var(--transition-base);
+        }
+      }
+      &:hover {
+        .product-bg-clip span {
+          background: var(--light-btn-color);
+        }
+        .ex-tr-product-info {
+          .product-reviews {
+            li {
+              a {
+                &.style__color {
+                  color: var(--primary-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .prev-arrow,
+  .next-arrow {
+    position: absolute;
+    right: 0;
+    top: -120px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    transition: var(--transition-base);
+    z-index: 10;
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+  .prev-arrow {
+    right: 70px;
+  }
+  @include screen-768 {
+    .prev-arrow {
+      right: calc(50% + 33px);
+      bottom: 0;
+      top: auto;
+    }
+    .next-arrow {
+      right: calc(50% - 33px);
+      bottom: 0;
+      top: auto;
+    }
+  }
+}
+.product-card {
+  .ex-tr-product-info {
+    .product-reviews {
+      li {
+        a {
+          &.style__color {
+            color: var(--danger-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+.more_reply {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    li {
+      &.active {
+        a {
+          background: var(--primary-color);
+          border: 1px solid var(--primary-color);
+        }
+      }
+      a {
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        box-shadow: none;
+        transition: var(--transition-base);
+        font-family: var(--body-font);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        &:hover {
+          background: var(--primary-color);
+          color: var(--white-color);
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          color: var(--primary-color);
+          background: transparent;
+          border-color: var(--primary-color);
+        }
+      }
+      .prev-arrow,
+      .next-arrow {
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+}

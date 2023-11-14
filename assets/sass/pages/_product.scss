@@ -1,0 +1,34 @@
+.product_main {
+  .product-card {
+    &:hover {
+      .product-bg-clip {
+        span {
+          background-color: var(--light-btn-color);
+        }
+      }
+      .feature-image {
+        .pd-badge-1 {
+          background: var(--black-color);
+        }
+        .pd-badge-2 {
+          background: var(--danger-color);
+        }
+        .pd-badge-3 {
+          background: var(--primary-color);
+        }
+      }
+      .ex-tr-product-info {
+        ul {
+          li {
+            a {
+              color: var(--danger-color);
+            }
+          }
+        }
+      }
+      .template-btn {
+        background: var(--primary-color) !important;
+      }
+    }
+  }
+}
